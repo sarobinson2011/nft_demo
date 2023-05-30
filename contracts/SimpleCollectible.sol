@@ -15,10 +15,11 @@ contract SimpleCollectible is ERC721 {
         string memory tokenURI
     ) public returns (uint256) {
         uint256 newTokenId = tokenCounter;
-
         _safeMint(msg.sender, newTokenId);
 
-        _tokenURI(newTokenId, tokenURI); // line needs re-writing for ^0.8.0
+        /* Allows NFT to have a viewable image associated with it */
+        _setTokenURI(newTokenId, tokenURI);
+        // --> TODO line needs re-writing for ^0.8.0
 
         tokenCounter = tokenCounter + 1;
         return newTokenId;
