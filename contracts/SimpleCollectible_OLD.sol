@@ -2,13 +2,15 @@
 
 pragma solidity ^0.6.6;
 
-// import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "";
+// import "/home/oem/.brownie/packages/OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/token/ERC721";
+// import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.0/contracts/token/ERC721/ERC721.sol";
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract SimpleCollectible is ERC721 {
     uint256 tokenCounter;
 
-    constructor() ERC721("Dogie", "DOG") {
+    constructor() public ERC721("Dogie", "DOG") {
         tokenCounter = 0;
     }
 
@@ -20,7 +22,6 @@ contract SimpleCollectible is ERC721 {
 
         /* Allows NFT to have a viewable image associated with it */
         _setTokenURI(newTokenId, tokenURI);
-        // --> TODO line needs re-writing for ^0.8.0
 
         tokenCounter = tokenCounter + 1;
         return newTokenId;
