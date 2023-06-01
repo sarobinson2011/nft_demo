@@ -1,14 +1,10 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.6.6;
-
-// import "/home/oem/.brownie/packages/OpenZeppelin/openzeppelin-contracts@3.4.0/contracts/token/ERC721";
-// import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.0/contracts/token/ERC721/ERC721.sol";
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract SimpleCollectible is ERC721 {
-    uint256 tokenCounter;
+    uint256 public tokenCounter;
 
     constructor() public ERC721("Dogie", "DOG") {
         tokenCounter = 0;

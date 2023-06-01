@@ -1,18 +1,17 @@
 dependencies:
-  # - OpenZeppelin/openzeppelin-contracts@4.3.2
   - OpenZeppelin/openzeppelin-contracts@3.4.0
 compiler:
   solc:
     remappings:
-      # - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.2'
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
 dotenv: .env
 
 networks:
-  default: mainnet-fork  
-  goerli:
-  mainnet-fork: 
+  default: mainnet-fork
   sepolia:
+    weth_token: "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9"  
+  mainnet-fork: 
+    weth_token: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2" 
 
 wallets:
   from_key: ${PRIVATE_KEY}
