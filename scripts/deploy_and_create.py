@@ -7,7 +7,9 @@ OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
 def main():
     account = get_account()
-    simple_collectible = SimpleCollectible.deploy({"from": account})
+    simple_collectible = SimpleCollectible.deploy(
+        {"from": account}, publish_source=True
+    )
 
     tx = simple_collectible.createCollectible(sample_token_uri, {"from": account})
     tx.wait(1)
