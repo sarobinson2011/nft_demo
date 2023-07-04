@@ -11,3 +11,4 @@
 
 1. Can't view NFT image on goerli or looksrare - sort this out
 2. Once viewable, move on with video
+ 

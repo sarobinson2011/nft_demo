@@ -20,7 +20,8 @@ contract SimpleCollectible is ERC721 {
         /* Allows NFT to have a viewable image associated with it */
         _setTokenURI(newTokenId, tokenURI);
 
-        tokenCounter = tokenCounter + 1;
+        // tokenCounter = tokenCounter + 1;
+        tokenCounter += 1;
         return newTokenId;
     }
 }
