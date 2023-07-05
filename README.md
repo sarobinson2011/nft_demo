@@ -12,6 +12,7 @@
 1. Can't view NFT image on goerli or looksrare - sort this out
 2. Once viewable, move on with video
 
+  --> it's the metadata that's the problem??
  
 3. Try using LooksRare instead of Opensea, in the viewing bit?
 
