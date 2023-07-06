@@ -14,6 +14,4 @@
 
   --> it's the metadata that's the problem??
  
-3. Try using LooksRare instead of Opensea, in the viewing bit?
-
-re-assemble it
+3. Looks Rare didn't make a difference - try the metadata
