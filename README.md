@@ -4,8 +4,9 @@
 ### ToDo:
 
 1. Can't view NFT image on goerli or looksrare - sort this out
-  FIXED
-2. xxx
+  --> FIXED
+
+2. Write a new smart contract which randomly mints 5 unique NFT images
 
 
 ### Progress:
