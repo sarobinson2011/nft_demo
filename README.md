@@ -6,7 +6,9 @@
 1. Can't view NFT image on goerli or looksrare - sort this out
   --> FIXED
 
-2. Write a new smart contract which randomly mints 5 unique NFT images
+2. Get attributes working (score out of 100 not working)          #ToDo
+
+3. Write a new smart contract which randomly mints 5 unique NFTs  #ToDo
 
 
 ### Progress:
