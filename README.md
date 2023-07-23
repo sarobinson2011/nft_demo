@@ -11,6 +11,7 @@
 3. Try this out on Sepolia 
 
 4. Write a new smart contract which randomly mints 5 unique NFTs  #ToDo
+    ('Perfect Pets' collection of 5)
 
 
 ### Progress:
