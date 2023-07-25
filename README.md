@@ -6,12 +6,13 @@
 1. Can't view NFT image on goerli or looksrare - sort this out
   --> FIXED
 
-2. Get attributes working (score out of 100 not working)          #ToDo
+2. Try this out on Sepolia 
+  --> FIXED - deployed to Sepolia, viewable in Metamask
 
-3. Try this out on Sepolia 
+3. Get attributes working (score out of 100 not working)           #ToDo
 
-4. Write a new smart contract which randomly mints 5 unique NFTs  #ToDo
-    ('Perfect Pets' collection of 5)
+4. Write a new smart contract which randomly mints 10 unique NFTs  #ToDo
+    ('Perfect Pets' collection of 10)
 
 
 ### Progress:
