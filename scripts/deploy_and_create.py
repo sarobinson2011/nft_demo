@@ -21,4 +21,4 @@ def main():
     print("Please wait up to 20 mins, and hit refresh metadata")
 
 
-# continue video from --> 10:15:16  to  10:19:16
+# continue video from --> 10:19:29  (test_simple_collectible.py)
