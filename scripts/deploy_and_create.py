@@ -12,13 +12,14 @@ def main():
         {"from": account}, publish_source=True
     )
 
-    tx = simple_collectible.createCollectible(sample_token_uri, {"from": account})
-    tx.wait(1)
+    for i in range(2):
+        tx = simple_collectible.createCollectible(sample_token_uri, {"from": account})
+        tx.wait(1)
 
-    print(
-        f"You can view your nft at {OPENSEA_URL.format(simple_collectible.address, simple_collectible.tokenCounter() - 1)}"
-    )
-    print("Please wait up to 20 mins, and hit refresh metadata")
+    # print(
+    #     f"You can view your nft at {OPENSEA_URL.format(simple_collectible.address, simple_collectible.tokenCounter() - 1)}"
+    # )
+    # print("Please wait up to 20 mins, and hit refresh metadata")
 
 
 # continue video from --> 10:19:29  (test_simple_collectible.py)
