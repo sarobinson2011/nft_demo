@@ -3,6 +3,7 @@ from brownie import SimpleCollectible
 
 # sample_token_uri = "https://ipfs.io/ipfs/QmSsYRx3LpDAb1GZQm7zZ1AuHZjfbPkD6J7s9r41xu1mf8?filename=pug.png"
 sample_token_uri = "https://ipfs.io/ipfs/QmddwNTy8cTSdCeaw81s1iWmRDzizB6aSBATEz7mt3edhx?filename=pug.json"
+labrador_uri = "https://ipfs.io/ipfs/QmNbLRXHLPwiP1A9syQxwhSMb1qocLjF3zNJVGL42t4DnS?filename=labrador.json"
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
 
@@ -12,8 +13,8 @@ def main():
         {"from": account}, publish_source=True
     )
 
-    for i in range(2):
-        tx = simple_collectible.createCollectible(sample_token_uri, {"from": account})
+    for i in range(1):
+        tx = simple_collectible.createCollectible(labrador_uri, {"from": account})
         tx.wait(1)
 
     # print(

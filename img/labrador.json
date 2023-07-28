@@ -1,0 +1,15 @@
+{
+    "name": "LAB",
+    "description": "Golden labrador puppy!",
+    "image": "https://ipfs.io/ipfs/QmbFiPU481gPbp6b2nf4GmFBQvfWtwcbMAXq7gptvTUFYE?filename=labrador.jpg",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": "top drawer"
+        },
+        {
+            "trait_type": "bark-level",
+            "value": "loud"
+        }
+    ]
+}
