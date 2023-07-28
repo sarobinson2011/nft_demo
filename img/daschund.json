@@ -1,0 +1,15 @@
+{
+    "name": "DASH",
+    "description": "An adorable Daschund pup!",
+    "image": "https://ipfs.io/ipfs/QmdD3iHfK1XNQEHuwmimP49aq22ccWk9HHWUob5VYu39Li?filename=dachshund-360.jpg",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": 8.9
+        },
+        {
+            "trait_type": "bark-level",
+            "value": "loud"
+        }
+    ]
+}

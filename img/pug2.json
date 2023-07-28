@@ -1,0 +1,15 @@
+{
+    "name": "PUG2",
+    "description": "Pug puppy revised!",
+    "image": "https://ipfs.io/ipfs/QmaF43Mhr1cCjoDaWvckgf44YyeEvZwwZvfGCVdG1LVCS2?filename=pug2.png",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": "top drawer"
+        },
+        {
+            "trait_type": "bark-level",
+            "value": "loud"
+        }
+    ]
+}
