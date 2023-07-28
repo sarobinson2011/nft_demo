@@ -17,7 +17,7 @@ def main():
     )
 
     for i in range(1):
-        tx = simple_collectible.createCollectible(pug2_uri, {"from": account})
+        tx = simple_collectible.createCollectible(daschund_uri, {"from": account})
         tx.wait(1)
 
 
