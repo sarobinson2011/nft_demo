@@ -1,0 +1,15 @@
+{
+    "name": "JACK",
+    "description": "A beastly Jack Russell pup!",
+    "image": "https://ipfs.io/ipfs/QmSur4aA6Vg8TYWKq1KWLnG52fuMn7PgdPwmmVL35xFSW6?filename=jackrussell.jpg",
+    "attributes": [
+        {
+            "trait_type": "cuteness",
+            "value": "Very"
+        },
+        {
+            "trait_type": "bark-level",
+            "value": "loudest"
+        }
+    ]
+}
