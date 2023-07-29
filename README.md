@@ -7,7 +7,7 @@
   --> FIXED
 
 2. Try this out on Sepolia 
-  --> FIXED - deployed to Sepolia, viewable in Metamask
+  --> FIXED - deployed to Sepolia, viewable on OpenSea !!!
 
 3. Get attributes working (score out of 100 not working)           #ToDo
 
