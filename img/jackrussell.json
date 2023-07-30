@@ -5,7 +5,7 @@
     "attributes": [
         {
             "trait_type": "cuteness",
-            "value": "Very"
+            "value": 9.0
         },
         {
             "trait_type": "bark-level",

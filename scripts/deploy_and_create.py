@@ -12,8 +12,13 @@ pug2_uri = "https://ipfs.io/ipfs/QmPRqc4NECw6HAybpxiPDBBpVDtNYvFS5vzdVErWHqTm3P?
 
 def main():
     account = get_account()
-    simple_collectible = SimpleCollectible.deploy(
-        {"from": account}, publish_source=True
+    # simple_collectible = SimpleCollectible.deploy(
+    #     {"from": account}, publish_source=False
+    # )
+
+    # tx = simple_collectible.createCollectible(jackrussell_uri, {"from": account})
+    simple_collectible = SimpleCollectible.at(
+        "0xfb2E2F18A9E219F0898b105357EDBCA20bc774Bb"
     )
 
     tx = simple_collectible.createCollectible(jackrussell_uri, {"from": account})
