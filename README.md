@@ -11,7 +11,7 @@
 
 3. Get attributes working (score out of 100 not working)           #ToDo
 
-4. Write a new smart contract which randomly mints 10 unique NFTs  #ToDo
+4. Write a new smart contract which RANDOMLY mints 10 unique NFTs  #ToDo
     ('Perfect Pets' collection of 10)
 
 
