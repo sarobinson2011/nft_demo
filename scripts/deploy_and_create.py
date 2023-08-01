@@ -11,18 +11,29 @@ pug2_uri = "https://ipfs.io/ipfs/QmPRqc4NECw6HAybpxiPDBBpVDtNYvFS5vzdVErWHqTm3P?
 
 
 def main():
+    deploy_and_create()
+
+
+def deploy_and_create():
     account = get_account()
-    # simple_collectible = SimpleCollectible.deploy(
-    #     {"from": account}, publish_source=False
-    # )
 
-    # tx = simple_collectible.createCollectible(jackrussell_uri, {"from": account})
-    simple_collectible = SimpleCollectible.at(
-        "0xfb2E2F18A9E219F0898b105357EDBCA20bc774Bb"
+    #####
+    simple_collectible = SimpleCollectible.deploy(
+        {"from": account}, publish_source=False
     )
-
     tx = simple_collectible.createCollectible(jackrussell_uri, {"from": account})
     tx.wait(1)
+    #####
+
+    #####
+    # simple_collectible = SimpleCollectible.at(
+    #     "0xfb2E2F18A9E219F0898b105357EDBCA20bc774Bb"
+    # )
+    # tx = simple_collectible.createCollectible(labrador_uri, {"from": account})
+    # tx.wait(1)
+    #####
+
+    return simple_collectible  # Testing addition
 
 
 # continue video from --> 10:19:29  (test_simple_collectible.py)
