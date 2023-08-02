@@ -12,8 +12,10 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     enum Breed{JACK, DASH, LAB, ROTTY, BERNY}
     
     constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {
+    
     VRFConsumerBase(_vrfCoordinator, _linkToken)
     ERC721("TheDoggos", "DOG") 
+    
     {
         tokenCounter = 0;
         keyHash = _keyHash;
