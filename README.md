@@ -23,3 +23,5 @@
 4. NFT deployed to goerli contract + successfully verified with publish_source=True
 5. FIXED (1)  -->  URI was a link to the image, as opposed to a JSON file  - created pug.json, which links to the image .png file (now viewable)
 
+
+# continue video from --> 10:23:16  (Advanced NFT)
