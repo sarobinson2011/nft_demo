@@ -9,7 +9,8 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     uint256 public tokenCounter;
     bytes32 public keyHash;
     uint256 public fee;
-    enum Breed{JACK, DASH, LAB, ROTTY, BERNY}
+    enum Breed{JACK, DASH, LAB, ROTTY, BERNY};
+    mapping(uint256 => Breed) tokenIdToBreed;
     
     constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {
     
@@ -25,6 +26,14 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     function createCollectible(string memory tokenURI) public returns (bytes32) {
         bytes32 requestId = requestRandomness(keyhash, fee);
 
+    }
+
+    function fulfillRandomness(bytes32 requestId, uint256 randomNumber) internal override {
+        Breed breed = Breed(randomNumber % 3);
+        uint256 newTokenId = tokenCounter;
+        tokenIdToBreed[newTokenId] = breed; 
+        _safeMint('xxx', newTokenId); // can't use msg.sender since vrfCoordinator calls this function
+        
     }
 
     }    
