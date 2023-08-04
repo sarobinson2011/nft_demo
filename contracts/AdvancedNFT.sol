@@ -13,10 +13,8 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     mapping(uint256 => Breed) tokenIdToBreed;
     
     constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {
-    
     VRFConsumerBase(_vrfCoordinator, _linkToken)
     ERC721("TheDoggos", "DOG") 
-    
     {
         tokenCounter = 0;
         keyHash = _keyHash;
@@ -33,7 +31,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
         uint256 newTokenId = tokenCounter;
         tokenIdToBreed[newTokenId] = breed; 
         _safeMint('xxx', newTokenId); // can't use msg.sender since vrfCoordinator calls this function
-        
+
     }
 
     }    
