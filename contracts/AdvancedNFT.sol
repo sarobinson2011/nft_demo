@@ -31,7 +31,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
         uint256 newTokenId = tokenCounter;
         tokenIdToBreed[newTokenId] = breed; 
         _safeMint('xxx', newTokenId); // can't use msg.sender since vrfCoordinator calls this function
-
+        
     }
 
     }    
