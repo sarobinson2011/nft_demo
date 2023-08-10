@@ -27,7 +27,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     }
 
     function fulfillRandomness(bytes32 requestId, uint256 randomNumber) internal override {
-        Breed breed = Breed(randomNumber % 3);
+        Breed breed = Breed(randomNumber % 5); // mod by whatever the length of enum Breed is
         uint256 newTokenId = tokenCounter;
         tokenIdToBreed[newTokenId] = breed; 
         _safeMint('xxx', newTokenId); // can't use msg.sender since vrfCoordinator calls this function
