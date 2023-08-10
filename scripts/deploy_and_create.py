@@ -34,6 +34,3 @@ def deploy_and_create():
     #####
 
     return simple_collectible  # Testing addition
-
-
-# continue video from --> 10:19:29  (test_simple_collectible.py)
