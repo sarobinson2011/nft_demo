@@ -12,14 +12,21 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     enum Breed{JACK, DASH, LAB, ROTTY, BERNY};
     mapping(uint256 => Breed) tokenIdToBreed;
     
-    constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {
-    VRFConsumerBase(_vrfCoordinator, _linkToken)
-    ERC721("Degen Doggos", "DGO") 
-    {
-        tokenCounter = 0;
-        keyHash = _keyHash;
-        fee = _fee;
-    }
+    /*  
+        First we need a constructor for the 2 imports: 
+        - ECR721  
+        - VRFConsumerBase
+    */
+
+    constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {    
+        VRFConsumerBase(_vrfCoordinator, _linkToken)
+        ERC721("Degen Doggos", "DGO") 
+        {
+            tokenCounter = 0;
+            keyHash = _keyHash;
+            fee = _fee;
+        }
+
     
     function createCollectible(string memory tokenURI) public returns (bytes32) {
         bytes32 requestId = requestRandomness(keyhash, fee);
