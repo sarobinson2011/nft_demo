@@ -14,7 +14,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     
     constructor(address _vrfCoordinator, address _linkTOken, address _keyHash, uint256 _fee) public {
     VRFConsumerBase(_vrfCoordinator, _linkToken)
-    ERC721("TheDoggos", "DOG") 
+    ERC721("Degen Doggos", "DGO") 
     {
         tokenCounter = 0;
         keyHash = _keyHash;
