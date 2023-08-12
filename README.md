@@ -4,15 +4,14 @@
 ### ToDo:
 
 1. Can't view NFT image on goerli or looksrare - sort this out
-  --> FIXED
+                --> FIXED
 
 2. Try this out on Sepolia 
-  --> FIXED - deployed to Sepolia, viewable on OpenSea !!!
+                --> FIXED - deployed to Sepolia, viewable on OpenSea !!!
 
-3. Get attributes working (score out of 100 not working)           #ToDo
+3. Write a new smart contract which RANDOMLY mints 10 unique NFTs           #ToDo
+    ('Degen Doggos' collection of 5 - JACK, DASH, LAB, ROTTY, BERNY)
 
-4. Write a new smart contract which RANDOMLY mints 10 unique NFTs  #ToDo
-    ('Perfect Pets' collection of 10)
 
 
 ### Progress:
